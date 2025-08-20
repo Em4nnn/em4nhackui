@@ -1,9 +1,10 @@
 # ⚡ Em4nn Hacking UI
 
-cd ~/em4nhackui
+**cd ~/em4nhackui**
 
-chmod +x em4nhackui.SH
-./em4nhackui.SH
+**chmod +x em4nhackui.SH**
+  
+  **./em4nhackui.SH**
 
 ## 📖 Açıklama
 **Em4nn Hacking UI**, Bash tabanlı bir çok amaçlı araç topluluğudur.  
