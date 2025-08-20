@@ -97,9 +97,15 @@ while true; do
         5)
             spotify_checker
             ;;
+    
         6)
-        python3 ~/netflix_checker/netflix_checker.py
-            ;;
+   if [ ! -f "$HOME/netflix_checker/accounts.txt" ]; then
+     echo -e "${R}❌ accounts.txt bulunamadı! Lütfen hesapları ekleyin.${W}"
+   else
+    python3 "$HOME/netflix_checker/netflix_checker.py"
+   fi
+   read -p "Devam etmek için Enter..."
+   ;;
 
         7)
             read -p "Hedef IP veya domain: " target
