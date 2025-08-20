@@ -58,6 +58,7 @@ menu() {
     echo -e "${R}[14]${W} Ağ Trafiği İzleme"
     echo -e "${R}[15]${W} Link Kısaltma / QR Kod Oluşturma"
     echo -e "${R}[16]${W} t.me/em4nhackingui"
+    echo -e "${R}[17]${W} Güncellemeleri Kontrol Et"
     echo -e "${R}[99]${W} Gerekli kütüphaneleri Yükle"
     echo -e "${R}[0]${W} Çıkış"
     echo
@@ -269,7 +270,18 @@ while true; do
             echo -e "${M}Güncelleme Ve Haberler t.me/em4nhackingui Em4n Inc...${W}"
             read -p "Devam etmek için Enter..."
             ;;
-        
+
+       17)
+          echo -e "${C}🔄 Güncelleme kontrolü başlatılıyor...${W}"
+           if [ -f "$HOME/em4nhackui/update.sh" ]; then
+           chmod +x "$HOME/em4nhackui/update.sh"
+           "$HOME/em4nhackui/update.sh"
+        else
+          echo -e "${R}❌ update.sh dosyası bulunamadı!${W}"
+        fi
+         read -p "Devam etmek için Enter..."
+          ;;
+ 
         99) 
             echo -e "${Y}Kütüphaneler ve gerekli projeler kuruluyor...${W}"
             
