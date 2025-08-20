@@ -21,9 +21,9 @@ Renkli menü ve kolay kullanım sayesinde Linux üzerinde hızlıca bilgi toplam
 ---
 
 ## ⚡ Özellikler
-- 🎭 **Phishing** (Zphisher ile)  
-- 📱 **SMS Bomber** (Enough-Reborn ile)  
-- 📷 **Kamera Hack** (CamHack ile)  
+- 🎭 **Phishing** 
+- 📱 **SMS Bomber** 
+- 📷 **Kamera Hack**   
 - 🎵 **Spotify Account Checker**   
 - 👻 **Netflix Accocunt Checker** 
 - 📢 **Güncel p4nel linkleri**
