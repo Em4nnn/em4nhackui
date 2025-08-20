@@ -91,7 +91,8 @@ while true; do
             echo "──────────────────────"
             echo "🚫 𝐕𝐏𝐍𝐒𝐈𝐙 𝐆𝐈𝐑𝐌𝐄𝐙 🚫"
             echo "──────────────────────"
-            echo "En Güncel Linkler t.me/emininc2025"
+            echo "En Güncel Linkler https://github.com/Em4nnn/em4nhackui"
+            echo "Yada cd ~/em4nhackui  /  chmod +x update.sh"
             read -p "Devam etmek için Enter..."
             ;;
         5)
