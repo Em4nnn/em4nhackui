@@ -42,9 +42,9 @@ banner() {
 menu() {
     echo -e "${Y}"
     echo "Yöntemleri Seçin:"
-    echo -e "${R}[1]${W} Phishing (Zphisher kurulu olmalı)"
-    echo -e "${R}[2]${W} SMS Bomber (Enough-Reborn kurulu olmalı)"
-    echo -e "${R}[3]${W} Kamera Hack - (CamHack kurulu olmalı)"
+    echo -e "${R}[1]${W} Phishing"
+    echo -e "${R}[2]${W} SMS Bomber"
+    echo -e "${R}[3]${W} Kamera Hack"
     echo -e "${R}[4]${W} Güncel P4n4l"
     echo -e "${R}[5]${W} Spotify Checker [Aktif Değil]"
     echo -e "${R}[6]${W} Netflix Checker (Aktif) accounts.txt"
