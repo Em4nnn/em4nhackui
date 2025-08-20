@@ -1,5 +1,10 @@
 # ⚡ Em4nn Hacking UI
 
+cd ~/em4nhackui
+
+chmod +x em4nhackui.SH
+./em4nhackui.SH
+
 ## 📖 Açıklama
 **Em4nn Hacking UI**, Bash tabanlı bir çok amaçlı araç topluluğudur.  
 Siber güvenlik ve ağ testlerinde kullanılabilecek farklı modülleri tek bir konsol arayüzü üzerinden yönetmeyi sağlar.  
