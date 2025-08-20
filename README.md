@@ -1,5 +1,10 @@
 # ⚡ Em4nn Hacking UI
 
+
+---
+
+## ⚡ Çalıştırma
+
 **cd ~/em4nhackui**
 
 **chmod +x em4nhackui.SH**
