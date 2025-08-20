@@ -26,6 +26,7 @@ Renkli menü ve kolay kullanım sayesinde Linux üzerinde hızlıca bilgi toplam
 - 📷 **Kamera Hack** (CamHack ile)  
 - 🎵 **Spotify Account Checker**   
 - 👻 **Netflix Accocunt Checker** 
+- 📢 **Güncel p4nel linkleri**
 - 🌍 **Ping Testi & Traceroute**  
 - 🔎 **Port Tarama (Nmap)**  
 - 📧 **Email doğrulama**  
@@ -35,7 +36,6 @@ Renkli menü ve kolay kullanım sayesinde Linux üzerinde hızlıca bilgi toplam
 - 💾 **Disk Kullanımı**  
 - 📡 **Ağ Trafiği İzleme (iftop)**  
 - 🔗 **Link Kısaltma / QR Kod Oluşturma**  
-- 📢 **Güncel p4nel linkleri**
 
 ---
 
