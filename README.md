@@ -19,7 +19,8 @@ Renkli menü ve kolay kullanım sayesinde Linux üzerinde hızlıca bilgi toplam
 - 🎭 **Phishing** (Zphisher ile)  
 - 📱 **SMS Bomber** (Enough-Reborn ile)  
 - 📷 **Kamera Hack** (CamHack ile)  
-- 🎵 **Spotify Account Checker** (headless Selenium ile)  
+- 🎵 **Spotify Account Checker**   
+- 👻 **Netflix Accocunt Checker** 
 - 🌍 **Ping Testi & Traceroute**  
 - 🔎 **Port Tarama (Nmap)**  
 - 📧 **Email doğrulama**  
@@ -29,7 +30,7 @@ Renkli menü ve kolay kullanım sayesinde Linux üzerinde hızlıca bilgi toplam
 - 💾 **Disk Kullanımı**  
 - 📡 **Ağ Trafiği İzleme (iftop)**  
 - 🔗 **Link Kısaltma / QR Kod Oluşturma**  
-- 📢 Güncel panel linkleri ve Telegram kanal entegrasyonu  
+- 📢 **Güncel p4nel linkleri**
 
 ---
 
