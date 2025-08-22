@@ -26,7 +26,6 @@ Renkli menü ve kolay kullanım sayesinde Linux üzerinde hızlıca bilgi toplam
 - 📷 **Kamera Hack**   
 - 🎵 **Spotify Account Checker**   
 - 👻 **Netflix Accocunt Checker** 
-- 📢 **Güncel p4nel linkleri**
 - 🌍 **Ping Testi & Traceroute**  
 - 🔎 **Port Tarama (Nmap)**  
 - 📧 **Email doğrulama**  
