@@ -11,7 +11,7 @@
   
   **./em4nhackui.SH**
 
-![Em4n Hacking UI Menu](https://raw.githubusercontent.com/Em4nnn/em4nhackui/refs/heads/main/Screenshot_20250822_153215_Termux%7E2.jpg)
+> https://replit.com/@em4nnn2/em4nhackui
 
 ## 📖 Açıklama
 **Em4nn Hacking UI**, Bash tabanlı bir çok amaçlı araç topluluğudur.  
@@ -48,6 +48,8 @@ Renkli menü ve kolay kullanım sayesinde Linux üzerinde hızlıca bilgi toplam
 
 ---
 
+![Em4n Hacking UI Menu](https://raw.githubusercontent.com/Em4nnn/em4nhackui/refs/heads/main/Screenshot_20250822_153215_Termux%7E2.jpg)
+
 ## 📦 Gerekli Kütüphaneler
 Kurulum için menüden `99` seçeneğini çalıştırabilirsiniz.  
 
@@ -55,3 +57,5 @@ Elle yüklemek isteyenler için:
 ```bash
 sudo apt update && sudo apt install -y curl whois traceroute nmap iftop git wget unzip python3 python3-pip chromium-browser chromium-chromedriver qrencode
 pip3 install selenium rich
+
+
