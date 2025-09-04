@@ -187,7 +187,7 @@ while true; do
             ;;
 
        17)
-          echo -e "${C}🔄 Güncelleme kontrolü başlatılamıyor lütfen konsolunuza > cd ~/em4nhackui  chmod +x update.sh  ./update.sh < Yazmanız Gerekmektedir${W}"
+          echo -e "${C}🔄 Güncelleme kontrolü başlatılamıyor lütfen konsolunuza > chmod +x update.sh  ./update.sh < Yazmanız Gerekmektedir${W}"
          read -p "Devam etmek için Enter..."
           ;;
  
