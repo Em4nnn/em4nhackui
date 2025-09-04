@@ -94,7 +94,7 @@ while true; do
             echo "En Güncel Linkler için"
             echo "https://github.com/Em4nnn/em4nhackui"
             echo "Em4nn UI Güncelleme"
-            echo "cd ~/em4nhackui  /  chmod +x update.sh  /  ./update.sh"
+            echo "cd ~/em4nhackui  chmod +x update.sh  ./update.sh"
             read -p "Devam etmek için Enter..."
             ;;
         5)
