@@ -175,16 +175,21 @@ while true; do
             ;;
         16)
             echo -e "${M}Güncelleme Ve Haberler t.me/em4nhackingui Em4n Inc...${W}"
+            echo -e "${M}──────────────────────${W}"
+            echo "🔗 𝐋𝐈𝐍𝐊: github.com/Em4nnn/em4nhackui"
+            echo "🔗 𝐋𝐈𝐍𝐊: t.me/em4nhackingui"
+            echo "──────────────────────"
+            echo "⚡️ Bu Yazılım Legal Mi?: Kısmen dbhdsud"
+            echo "──────────────────────"
+            echo "🚫 Sorumluluk Kişiye Özeldir 🚫"
+            echo "──────────────────────"
             read -p "Devam etmek için Enter..."
             ;;
 
        17)
-          echo -e "${C}🔄 Güncelleme kontrolü başlatılıyor...${W}"
-           if [ -f "$HOME/em4nhackui/update.sh" ]; then
-           chmod +x "$HOME/em4nhackui/update.sh"
-           "$HOME/em4nhackui/update.sh"
+          echo -e "${C}🔄 Güncelleme kontrolü başlatılamıyor lütfen konsolunuza > cd ~/em4nhackui  chmod +x update.sh  ./update.sh < Yazmanız Gerekmektedir${W}"
         else
-          echo -e "${R}❌ update.sh dosyası bulunamadı!${W}"
+          echo -e "${R}❌ Uyarıyı görmedin mi dostum?!${W}"
         fi
          read -p "Devam etmek için Enter..."
           ;;
