@@ -11,7 +11,7 @@
   
   **./em4nhackui.SH**
 
-> https://replit.com/@em4nnn2/em4nhackui
+> **Geliştirme Aşamasındadır!**
 
 ## 📖 Açıklama
 **Em4nn Hacking UI**, Bash tabanlı bir çok amaçlı araç topluluğudur.  
