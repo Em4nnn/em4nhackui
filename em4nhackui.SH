@@ -83,9 +83,9 @@ while true; do
             ;;
         4)
             echo -e "${M}──────────────────────${W}"
-            echo "🔗 𝐋𝐈𝐍𝐊: https://707check.pro"
-            echo "          https://ozkaya.store/"
-            echo "          https://focusum.store/"
+            echo "🔗 𝐋𝐈𝐍𝐊: AKTIF DEGIL"
+            echo "        AKTIF DEGIL"
+            echo "     AKTIF DEGIL"
             echo "──────────────────────"
             echo "⚡️ 𝐊e𝐘: ÜCRETSİZ GİRİŞ MEVCUT"
             echo "──────────────────────"
