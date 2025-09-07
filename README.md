@@ -5,7 +5,7 @@
 
 ## 💖 Destek Ol
 
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-🇪🇺%20EU%20&%20🇺🇲%20USA-yellow?style=for-the-badge&logo=buy-me-a-coffee)](https://www.buymeacoffee.com/em4nn)
+[![🎁](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-🇪🇺%20EU%20&%20🇺🇲%20USA-yellow?style=for-the-badge&logo=Donate-Me)](https://s.binance.com/a8OXvBr6)
 [![Papara](https://img.shields.io/badge/Papara-🇹🇷%20TR-purple?style=for-the-badge)](https://ppr.ist/2eTIs3cPQ)
 [![Binance](https://img.shields.io/badge/Binance-🌐%20Crypto-orange?style=for-the-badge&logo=binance)](https://s.binance.com/a8OXvBr6)
 
