@@ -9,13 +9,37 @@
 [![Papara](https://img.shields.io/badge/Papara-🇹🇷%20TR-purple?style=for-the-badge)](https://ppr.ist/2eTIs3cPQ)
 [![Binance](https://img.shields.io/badge/Binance-🌐%20Crypto-orange?style=for-the-badge&logo=binance)](https://s.binance.com/a8OXvBr6)
 
+
+
+
+## 🚀 Yükleme Ve Kurma 
+
+```git clone https://github.com/Em4nnn/em4nhackui.git```
+
+
+📦 Gerekli Kütüphaneler
+Kurulum için menüden `99` seçeneğini çalıştırabilirsiniz. 
+
 ## ⚡ Çalıştırma
 
-**cd ~/em4nhackui**
+cd ~/em4nhackui
 
-**chmod +x em4nhackui.SH**
-  
-  **./em4nhackui.SH**
+chmod +x em4nhackui.SH
+
+./em4nhackui.SH
+
+## 💫 Güncelleme
+
+**Güncelleme için konsolunuzda bu komudu kullanmanız gerekiyor. 
+Güncellemeleri Kontrol Etmenizi Öneriyorum 🔥**
+
+cd ~/em4nhackui
+
+chmod +x update.SH 
+
+./update.sh
+
+
 
 > **Geliştirme Aşamasındadır!**
 
