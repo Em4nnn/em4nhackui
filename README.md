@@ -78,7 +78,7 @@ Renkli menü ve kolay kullanım sayesinde Linux üzerinde hızlıca bilgi toplam
 
 ---
 
-![Em4n Hacking UI Menu](https://raw.githubusercontent.com/Em4nnn/em4nhackui/refs/heads/main/Screenshot_20250822_153215_Termux%7E2.jpg)
+![Em4n Hacking UI Menu](https://github.com/Em4nnn/em4nhackui/blob/main/em4nn.png?raw=true)
 
 ## 📦 Gerekli Kütüphaneler
 Kurulum için menüden `99` seçeneğini çalıştırabilirsiniz.  
